@@ -29,7 +29,7 @@ function SlidesInner({ mdx, components, children, style, className, ...rest }: S
       setMetadatas(tempMetadata)
       return tempMetadata
     },
-    [mdx]
+    [mdx, setMetadatas]
   );
 
   const metadata = metadatas[currentPage];

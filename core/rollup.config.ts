@@ -5,7 +5,10 @@ import { defineConfig } from "rollup";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
-import pkg from "./package.json" with { type: "json" };
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const pkg = require('./package.json');
+
 import { string } from "rollup-plugin-string";
 
 export default [

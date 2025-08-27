@@ -85,7 +85,7 @@ export function Velustro(props: VelustroProps) {
       ctn.removeChild(gl.canvas);
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
-  }, []);
+  }, [uColor]);
 
   return (
     <div

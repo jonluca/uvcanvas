@@ -74,7 +74,7 @@ export function Tranquiluxe(props: TranquiluxeProps) {
       ctn.removeChild(gl.canvas);
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
-  }, []);
+  }, [color]);
 
   return (
     <div

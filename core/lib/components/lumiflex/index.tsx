@@ -73,7 +73,7 @@ export function Lumiflex(props: LumiflexProps) {
       ctn.removeChild(gl.canvas);
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
-  }, []);
+  }, [color]);
 
   return (
     <div

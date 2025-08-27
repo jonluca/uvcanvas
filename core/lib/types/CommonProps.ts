@@ -1,5 +1,3 @@
-
-
 export interface CommonProps {
   onReady?: () => void
 }
